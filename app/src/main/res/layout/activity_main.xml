@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLL"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:contentDescription="@string/rsnmDefaultText"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imgFlag"
+        android:layout_width="380dp"
+        android:layout_height="304dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="8dp"
+        android:contentDescription="@string/flag_image"
+        android:padding="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/txtQuestion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/flag0" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/flBtnNext"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:clickable="true"
+        android:contentDescription="@string/rsnmFloatNextBtn"
+        android:focusable="true"
+        app:layout_constraintBottom_toBottomOf="@+id/imgFlag"
+        app:layout_constraintEnd_toEndOf="@+id/imgFlag"
+        app:layout_constraintHorizontal_bias="0.532"
+        app:layout_constraintStart_toStartOf="@+id/imgFlag"
+        app:srcCompat="@android:drawable/ic_media_play" />
+
+    <EditText
+        android:id="@+id/txtQuestionNumber"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/rsnmDefaultNumber"
+        android:inputType="number"
+        android:text="@string/rsnmDefaultNumber"
+        app:layout_constraintBottom_toBottomOf="@+id/txtQuestion"
+        app:layout_constraintEnd_toStartOf="@+id/txtQuestion"
+        app:layout_constraintHorizontal_bias="0.693"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/txtQuestion" />
+
+    <EditText
+        android:id="@+id/txtQuestion"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="8dp"
+        android:autofillHints="@string/rsnmDefaultText"
+        android:ems="10"
+        android:hint="@string/rsnmDefaultText"
+        android:inputType="textPersonName"
+        android:text="@string/question1"
+        app:layout_constraintBottom_toTopOf="@+id/radioGroup2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtQuestionNumber"
+        app:layout_constraintTop_toBottomOf="@+id/imgFlag" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtQuestion">
+
+        <RadioButton
+            android:id="@+id/rbAnswer1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/answer1_question1" />
+
+        <RadioButton
+            android:id="@+id/rbAnswer2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/answer2_question1" />
+
+        <RadioButton
+            android:id="@+id/rbAnswer3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/answer3_question1" />
+
+        <RadioButton
+            android:id="@+id/rbAnswer4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/answer4_question1" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/txtAnsweredQuestion"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/rsnmDefaultNumber"
+        android:inputType="number"
+        android:text="@string/rsnmDefaultNumber"
+        app:layout_constraintBottom_toBottomOf="@+id/txtSpace"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/txtSpace" />
+
+    <EditText
+        android:id="@+id/txtTotalRightAnswer"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/rsnmDefaultNumber"
+        android:inputType="number"
+        android:text="@string/rsnmDefaultNumber"
+        app:layout_constraintEnd_toStartOf="@+id/txtSpace"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtSpace"
+        android:layout_width="20dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/rsnmSpace"
+        android:text="@string/rsnmSpace"
+        app:layout_constraintBottom_toBottomOf="@+id/txtTotalRightAnswer"
+        app:layout_constraintEnd_toStartOf="@+id/txtAnsweredQuestion"
+        app:layout_constraintTop_toTopOf="@+id/txtTotalRightAnswer" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

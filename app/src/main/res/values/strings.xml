@@ -1,0 +1,90 @@
+<resources>
+    <string name="app_name">Flag Quiz</string>
+    <string name="rsnmAppName">FUN QUIZZZ</string>
+    <string name="rsnmcloseinstruction">Close</string>
+    <string name="rsnmgameinstruction">GAME INSTRUCTION</string>
+    <string name="instruction">
+        Welcome to FLAG QUIZZ\n
+        This is one of the most popular game in the world &#128526;\n
+        Be ready to challenge your knowledge with ten cool questions\n
+        You will be walked through those questions and\n
+        please select next button to move on\n
+        See you against at the end game.
+    </string>
+    <string name="flag_image">Flag Image</string>
+    <string name="question1">This is question 1</string>
+    <string name="answer1_question1">This is answer 1 of question 1</string>
+    <string name="answer2_question1">This is answer 2 of question 1</string>
+    <string name="answer3_question1">This is answer 3 of question 1</string>
+    <string name="answer4_question1">This is answer 4 of question 1</string>
+    <integer name="question1_answer">1</integer>
+    <string name="question2">This is question 2</string>
+    <string name="answer1_question2">This is answer 1 of question 2</string>
+    <string name="answer2_question2">This is answer 2 of question 2</string>
+    <string name="answer3_question2">This is answer 3 of question 2</string>
+    <string name="answer4_question2">This is answer 4 of question 2</string>
+    <integer name="question2_answer">2</integer>
+    <string name="question3">This is question 3</string>
+    <string name="answer1_question3">This is answer 1 of question 3</string>
+    <string name="answer2_question3">This is answer 2 of question 3</string>
+    <string name="answer3_question3">This is answer 3 of question 3</string>
+    <string name="answer4_question3">This is answer 4 of question 3</string>
+    <integer name="question3_answer">3</integer>
+    <string name="question4">This is question 4</string>
+    <string name="answer1_question4">This is answer 1 of question 4</string>
+    <string name="answer2_question4">This is answer 2 of question 4</string>
+    <string name="answer3_question4">This is answer 3 of question 4</string>
+    <string name="answer4_question4">This is answer 4 of question 4</string>
+    <integer name="question4_answer">4</integer>
+    <string name="question5">This is question 5</string>
+    <string name="answer1_question5">This is answer 1 of question 5</string>
+    <string name="answer2_question5">This is answer 2 of question 5</string>
+    <string name="answer3_question5">This is answer 3 of question 5</string>
+    <string name="answer4_question5">This is answer 4 of question 5</string>
+    <integer name="question5_answer">1</integer>
+    <string name="question6">This is question 6</string>
+    <string name="answer1_question6">This is answer 1 of question 6</string>
+    <string name="answer2_question6">This is answer 2 of question 6</string>
+    <string name="answer3_question6">This is answer 3 of question 6</string>
+    <string name="answer4_question6">This is answer 4 of question 6</string>
+    <integer name="question6_answer">2</integer>
+    <string name="question7">This is question 7</string>
+    <string name="answer1_question7">This is answer 1 of question 7</string>
+    <string name="answer2_question7">This is answer 2 of question 7</string>
+    <string name="answer3_question7">This is answer 3 of question 7</string>
+    <string name="answer4_question7">This is answer 4 of question 7</string>
+    <integer name="question7_answer">3</integer>
+    <string name="question8">This is question 8</string>
+    <string name="answer1_question8">This is answer 1 of question 8</string>
+    <string name="answer2_question8">This is answer 2 of question 8</string>
+    <string name="answer3_question8">This is answer 3 of question 8</string>
+    <string name="answer4_question8">This is answer 4 of question 8</string>
+    <integer name="question8_answer">4</integer>
+    <string name="question9">This is question 9</string>
+    <string name="answer1_question9">This is answer 1 of question 9</string>
+    <string name="answer2_question9">This is answer 2 of question 9</string>
+    <string name="answer3_question9">This is answer 3 of question 9</string>
+    <string name="answer4_question9">This is answer 4 of question 9</string>
+    <integer name="question9_answer">1</integer>
+    <string name="question10">This is question 10</string>
+    <string name="answer1_question10">This is answer 1 of question 10</string>
+    <string name="answer2_question10">This is answer 2 of question 10</string>
+    <string name="answer3_question10">This is answer 3 of question 10</string>
+    <string name="answer4_question10">This is answer 4 of question 10</string>
+    <integer name="question10_answer">2</integer>
+    <string name="rsnmQuestion">QUESTION:</string>
+    <string name="rsnmDefaultText" />
+    <string name="rsnmBack">Back To Questions</string>
+    <string name="rsnmNext">NEXT QUESTION</string>
+    <string name="rsnmFloatNextBtn">Next Flag</string>
+    <string name="rsnmDefaultNumber">0</string>
+    <string name="rsnmSpace">/</string>
+    <string name="rsnmResultPicture">result picture</string>
+    <string name="congrat">
+        GREAT JOB !!!\n
+        YOU ONE OF THE BEST !!!\n
+        &#128525; &#128525; &#128525;
+    </string>
+    <string name="encourage">ITS ALRIGHT. \nYOU WILL MAKE IT NEXT TIME !!!</string>
+
+</resources>

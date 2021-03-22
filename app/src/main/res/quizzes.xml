@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<quizzes>
+	<quiz>
+		<question>Here is question 1</question>
+		<answer1>Here is answer 1 of q1</answer1>
+		<answer2>Here is answer 2 of q1</answer2>
+		<answer3>Here is answer 3 of q1</answer3>
+		<answer4>Here is answer 4 of q1</answer4>
+	</quiz>
+	<quiz>
+		<question>Here is question 2</question>
+		<answer1>Here is answer 1 of q2</answer1>
+		<answer2>Here is answer 2 of q2</answer2>
+		<answer3>Here is answer 3 of q2</answer3>
+		<answer4>Here is answer 4 of q2</answer4>
+	</quiz>
+</quizzes>
