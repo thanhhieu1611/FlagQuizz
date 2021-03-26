@@ -43,6 +43,7 @@ public class MainActivity extends AppCompatActivity {
     Integer flagNumber;
     Integer totalRightAnswerNumber;
     Integer totalAnsweredNumber;
+    Integer resetGame;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -75,12 +76,25 @@ public class MainActivity extends AppCompatActivity {
         totalAnsweredNumber = 1;
         flagNumber = 1;
         playingSound = null;
+        resetGame = 0;
 
         //Initialize values for objects
         flag.setTag(R.drawable.flag0);
         totalAnsweredQuestion.setText(totalAnsweredNumber.toString());
         totalRightQuestion.setText(totalRightAnswerNumber.toString());
         UpdateQuiz(1);
+
+        //Get data from EndGame Activity
+        if(getIntent().getExtras() != null){
+            Bundle bundle = getIntent().getExtras();
+            resetGame = bundle.getInt("Reset");
+        }
+
+        //Reset if start a new game
+        if(resetGame == 1){
+            ResetGame();
+        }
+
 
         //OnCheckedChange Event Listeners for all radio buttons
         for(RadioButton option : optionLst){
@@ -343,5 +357,12 @@ public class MainActivity extends AppCompatActivity {
             mp = null;
         }
         return mp;
+    }
+
+    // Reset game when user click new game in the end game activity
+    private void ResetGame(){
+          totalRightQuestion.setText("0");
+          currentQuestion.setText("1");
+
     }
 }

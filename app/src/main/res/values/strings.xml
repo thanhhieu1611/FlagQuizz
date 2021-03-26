@@ -86,5 +86,7 @@
         &#128525; &#128525; &#128525;
     </string>
     <string name="encourage">ITS ALRIGHT. \nYOU WILL MAKE IT NEXT TIME !!!</string>
+    <string name="rsnmNewGame">New Game</string>
+    <string name="rsnmExit">Exit Game</string>
 
 </resources>
