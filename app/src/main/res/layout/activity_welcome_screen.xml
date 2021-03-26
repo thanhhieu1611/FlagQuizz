@@ -7,7 +7,7 @@
     android:background="#F7FF00"
     tools:context=".WelcomeScreen">
 
-    <ImageView
+    <pl.droidsonroids.gif.GifImageView
         android:id="@+id/imageView"
         android:layout_width="218dp"
         android:layout_height="202dp"
@@ -21,7 +21,7 @@
         app:layout_constraintHorizontal_bias="0.548"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/logo" />
+        android:src="@drawable/globe_o_flags" />
 
     <TextView
         android:id="@+id/txtAppName"

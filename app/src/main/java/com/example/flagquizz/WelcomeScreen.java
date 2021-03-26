@@ -18,7 +18,7 @@ public class WelcomeScreen extends AppCompatActivity {
         HideActionBar();
         try{
             //Need to adjust time here before submit
-            WaitSeconds(1);
+            WaitSeconds(3);
         }catch(Exception exception){
             Toast.makeText(WelcomeScreen.this, exception.getMessage(), Toast.LENGTH_SHORT).show();
         }
