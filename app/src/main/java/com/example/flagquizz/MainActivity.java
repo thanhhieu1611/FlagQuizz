@@ -74,6 +74,7 @@ public class MainActivity extends AppCompatActivity {
         totalRightAnswerNumber = 0;
         totalAnsweredNumber = 1;
         flagNumber = 1;
+        playingSound = null;
 
         //Initialize values for objects
         flag.setTag(R.drawable.flag0);
@@ -124,9 +125,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 //Release playingSound resource
-                if(playingSound != null){
-                    StopASound(playingSound);
-                }
+                playingSound = StopASound(playingSound);
 
                 //Move to next question if available
                 if(flagNumber != numberOfQuestion){
@@ -337,9 +336,12 @@ public class MainActivity extends AppCompatActivity {
         mp.start();
         return mp;
     }
-    private void StopASound(MediaPlayer mp){
-        mp.stop();
-        mp.release();
-        mp = null;
+    private MediaPlayer StopASound(MediaPlayer mp){
+        if(mp != null){
+            mp.stop();
+            mp.release();
+            mp = null;
+        }
+        return mp;
     }
 }
